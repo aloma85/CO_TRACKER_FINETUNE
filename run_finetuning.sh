@@ -12,8 +12,8 @@ mkdir -p ./checkpoints/my_finetuned_model
 python train_custom_dataset.py \
     --model_name cotracker_three \
     --restore_ckpt ./checkpoints/cotracker_model.pth \
-    --ckpt_path ./checkpoints/my_finetune_model \
-    --video_dir ./data/micheal_train \
+    --ckpt_path ./checkpoints/my_finetuned_model \
+    --video_dir ./data/ \
     --batch_size 1 \
     --num_workers 2 \
     --lr 0.0005 \
