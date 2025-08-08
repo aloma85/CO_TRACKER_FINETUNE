@@ -11,8 +11,8 @@ mkdir -p ./checkpoints/my_finetuned_model
 # Run training with batch size 1 for CoTracker3 compatibility
 python train_custom_dataset.py \
     --model_name cotracker_three \
-    --restore_ckpt ./checkpoints/michael_finetune_model/model_cotracker_three_000168.pth \
-    --ckpt_path ./checkpoints/michael_finetune_model \
+    --restore_ckpt ./checkpoints/cotracker_model.pth \
+    --ckpt_path ./checkpoints/my_finetune_model \
     --video_dir ./data/micheal_train \
     --batch_size 1 \
     --num_workers 2 \
